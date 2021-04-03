@@ -16,8 +16,7 @@ def alarm():
         curr_time=datetime.datetime.now().strftime("%H:%M:%S")
         if curr_time==al_time:
             Label(root,text='Wake the fuck up, Samurai',font='Cyberpunk 20 bold',fg='#fcec0c',bg='#bd00ff').pack()
-            chromePath = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
-            webbrowser.get(chromePath).open(str(url.get()))
+            webbrowser.open(str(url.get()))
 Label(root,text="Alarm Clock",font=("Cyberpunk 20 bold"),fg='#fcec0c',bg='#bd00ff').pack(pady=10)
 Label(root,text="Set Time",font=("Cyberpunk 15 bold"),fg='#fcec0c',bg='#bd00ff').pack()
 frame = Frame(root)
